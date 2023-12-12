@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTgraphy Subscribe</title>
+    <link rel="stylesheet" href="stylesubscribe.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="max-width">
+
+            <div class="toggle-btn" onclick="myFunction();">
+                <span></span><span></span><span></span>
+            </div>
+
+            <div class="logo">
+                <a href="./home.html">
+                    <img src="./Aset/Logo MTgraphy.png" alt="Logo MTgraphy" class="logo_perusahaan">
+                    <span class="nama_perusahaan">MTgraphy</span>
+                    <br>
+                    <span class="slogan_perusahaan">Capturing life. Creating art</span>
+                </a>
+            </div>
+            
+            <nav id="nav">
+                <ul class="menu">
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="./gallery.html">GALLERY</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a class="active" href="./subscribe.html">SUBSCRIBE</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+    <div class="head"></div>
+
+        <!-- SUBS FORM-->
+        <section class="subform">
+            <div class="container">
+                <div class="header">
+                    <h2>Join Us Now!</h2>
+                </div>
+    
+                <form class="form" id="form">
+                    <div class="form-control">
+                        <label>Name</label>
+                        <input type="text" id="name" placeholder="Full name">
+                        <small>Error Message</small>
+                    </div>
+    
+                    <div class="form-control">
+                        <label>Email</label>
+                        <input type="text" id="email" placeholder="youremail@com">
+                        <small>Error Message</small>
+                    </div>
+    
+                    <div class="form-control">
+                        <label>Phone Number</label>
+                        <input type="text" id="number" placeholder="012345678912">
+                        <small>Error Message</small>
+                    </div>
+    
+                    <div class="form-control">
+                        <label>Country</label>
+                        <input type="text" id="country" placeholder="Indonesia, Singapore, Malaysia">
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <label>Terms & Conditions</label>
+                        <h2><input type="checkbox" id="TC" class="checkbox"> </h2>
+                        I agree with MTgraphy Terms & Conditions
+                        <small>Error Message</small>
+                    </div>
+    
+                    <button>SUBSCRIBE</button>
+                </form>
+            </div>
+        </section>
+
+    <!-- FOOTER -->
+<section class="footer">
+    <div class="social">
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="./Aset/instagram.png" alt="Logo ig" class="LogoIG"></a>
+
+        <a href="https://web.whatsapp.com/" target="_blank" class="LogoWA">
+            <img src="./Aset/whatsapp.png" alt="Logo wa"></a>
+
+        <a href="https://twitter.com/" target="_blank" class="LogoTWT">
+            <img src="./Aset/twitter.png" alt="Logo twt"></a>
+
+        <a href="https://www.facebook.com/" target="_blank" class="Logo_FB">
+            <img src="./Aset/facebook.png" alt="Logo fb"></a>
+    </div>
+
+    <ul class="list">
+        <li>
+            <a href="./home.html">Home</a>
+        </li>
+        <li>
+            <a href="./gallery.html">Gallery</a>
+        </li>
+        <li>
+            <a href="./contact.html">Contact</a>
+        </li>
+        <li>
+            <a href="#">Terms</a>
+        </li>
+        <li>
+            <a href="#">Privacy Policy</a>
+        </li>
+    </ul>
+    <p class="copyright">
+        @ 2022 MTgraphy. All Rights Reserved.
+    </p>
+</section>
+</body>
+</html>

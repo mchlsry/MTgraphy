@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: rgb(255, 255, 255, 0.5);
+    font-family: "Raleway";
+    padding: 15px 0;
+    z-index: 999;
+}
+
+.logo_perusahaan{
+    width: 100px;
+    float: left;
+}
+
+.menu li a{
+    font-size: 20px;
+    font-weight: 600px;
+    margin-left: 25px;
+    color:black;
+}
+
+.nama_perusahaan{
+    font-size: 35px;
+    font-weight: 600;
+    color:black;
+}
+
+.slogan_perusahaan{
+    font-size: 15px;
+    color: black;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a:hover, .menu li a.active{
+    font-size: x-large;
+    color: tomato;;
+    transition: .5s;
+}
+
+.max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.toggle-btn{
+    width: 30px;
+    position: fixed;
+    right: 80px;
+    left: 30px;
+    top: 40px;
+    display: none;
+}
+
+.toggle-btn span{
+    display: block;
+    width: 110%;
+    height: 4px;
+    background-color: black;
+    margin: 8px;
+}
+
+/* WHO WE ARE */
+.home{
+    display: flex;
+    background-image: url(./Aset/bgabout2.jpg);
+    height: 100vh;
+    min-height: 1000px;
+    font-family: "Raleway";
+}
+
+.title{
+    margin-bottom: 3rem;
+    margin-left: 240px;
+    margin-top: 200px;
+    letter-spacing: 3px;
+    font-size: xx-large;
+    font-weight: bolder;
+    position: relative;
+    color: white;
+    
+}
+
+.title::after{
+    position: absolute;
+    content: "";
+    top: 120%;
+    width: 370px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+.lead{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    background: rgb(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    margin-left: 30px;
+}
+
+/* STORY */
+.story{
+    display: flex;
+    background-image: url(./Aset/bgstory.jpg);
+    height: 100vh;
+    min-height: 800px;
+    font-family: "Raleway";
+}
+
+.title2{
+    margin-bottom: 3rem;
+    margin-left: 780px;
+    margin-top: 200px;
+    letter-spacing: 3px;
+    font-size: xx-large;
+    font-weight: bolder;
+    position: relative;
+    color: white;
+    
+}
+
+.title2::after{
+    position: absolute;
+    content: "";
+    top: 120%;
+    width: 300px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+.lead2{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
+    background: rgb(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    margin-left: 30rem;
+}
+
+/* FOOTER */
+.footer{
+    font-family: "Raleway";
+    font-weight: 400;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.social a{
+    color: inherit;
+    width: 40px; height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.logoWA{
+    margin: 10px 19px;
+}
+
+.social a:hover{
+    opacity: 0.9;
+}
+
+.footer ul{
+    margin-top: 0; padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li a:hover{
+    opacity: 1;
+    margin: 10px;
+    transition: .5s;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* RESPONSIVE MEDIA */
+@media only screen and (max-width: 800px){
+    .toggle-btn{
+        display: block;
+    }
+
+    .max-width{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+    }
+    
+    nav{
+        display: none;
+        width: 100%;
+        border-top: 1px solid black;
+        padding-top: 10px;
+        margin-top: 40px;
+    }
+
+    nav ul li{
+        padding-top: 15px 0px;
+        width: 100%;
+    }
+
+    .menu li{
+        padding: 5px;
+    }
+
+    nav.show{
+        display: block;
+    }
+
+    .lead{
+        margin-left: 10px;
+    }
+
+    .title2{
+        margin-bottom: 3rem;
+        margin-left: 280px;
+        margin-top: 100px;
+        letter-spacing: 3px;
+        font-size: xx-large;
+        font-weight: bolder;
+        position: relative;
+        color: white;
+        
+    }
+
+    .lead2{
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1.5;
+        text-align: center;
+        color: white;
+        background: rgb(0, 0, 0, 0.7);
+        padding: 10px 20px;
+        margin-left: 10px;
+    }
+}

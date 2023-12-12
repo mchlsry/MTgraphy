@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: rgb(255, 255, 255, 0.5);
+    font-family: "Raleway";
+    padding: 15px 0;
+    z-index: 999;
+}
+
+.logo_perusahaan{
+    width: 100px;
+    float: left;
+}
+
+.menu li a{
+    font-size: 20px;
+    font-weight: 600px;
+    margin-left: 25px;
+    color:black;
+}
+
+.nama_perusahaan{
+    font-size: 35px;
+    font-weight: 600;
+    color:black;
+}
+
+.slogan_perusahaan{
+    font-size: 15px;
+    color: black;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a:hover, .menu li a.active{
+    font-size: x-large;
+    color: tomato;;
+    transition: .5s;
+}
+
+.max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.toggle-btn{
+    width: 30px;
+    position: fixed;
+    right: 80px;
+    left: 30px;
+    top: 40px;
+    display: none;
+}
+
+.toggle-btn span{
+    display: block;
+    width: 110%;
+    height: 4px;
+    background-color: black;
+    margin: 8px;
+}
+
+/* HEAD GALLERY */
+.gallery{
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)) ,url(./Aset/bggallery2.jpg);
+    height: 70vh;
+    min-height: 300px;
+    font-family: "Raleway";
+}
+
+.title_gallery{
+    margin-bottom: 1rem;
+    margin-left: 29rem;
+    margin-top: 200px;
+    letter-spacing: 3px;
+    font-size: xx-large;
+    font-weight: bolder;
+    position: relative;
+    color: white;
+}
+
+.title_gallery::after{
+    position: absolute;
+    content: "";
+    top: 120%;
+    width: 370px;
+    height: 4px;
+    right: 30rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.lead{
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+    padding: 30px;
+}
+
+/* PORTRAIT */
+.portrait, .landscape{
+    padding: 100px 0;
+}
+
+.title{
+    font-family: "Raleway";
+    text-align: center;
+    font: 40px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background: rgb(173, 17, 17);
+    bottom: 0; left: 42.5%;
+    transform: translateX(-50);
+}
+
+.title::after{
+    content: "featured";
+    position: absolute;
+    bottom: -12px; left: 46.5%;
+    background: rgb(255, 255, 255);
+    color: tomato;
+    padding: 5px;
+    font-size: 20px;
+    transform: translateX(-50);
+}
+
+.card{
+    width: 100%; height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+
+.card img{
+    width: 400px; height: 600px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 40px;
+}
+
+.foto:hover img{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(64, 224, 208, 0.7);
+}
+
+/* LANDSCAPE */
+.cardland{
+    width: 100%; height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardland img{
+    width: 600px; height: 300px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 40px;
+}
+
+/* FOOTER */
+.footer{
+    font-family: "Raleway";
+    font-weight: 400;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.social a{
+    color: inherit;
+    width: 40px; height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.logoWA{
+    margin: 10px 19px;
+}
+
+.social a:hover{
+    opacity: 0.9;
+}
+
+.footer ul{
+    margin-top: 0; padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li a:hover{
+    opacity: 1;
+    margin: 10px;
+    transition: .5s;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* RESPONSIVE MEDIA */
+@media only screen and (max-width: 800px){
+    .toggle-btn{
+        display: block;
+    }
+
+    .max-width{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+    }
+    
+    nav{
+        display: none;
+        width: 100%;
+        border-top: 1px solid black;
+        padding-top: 10px;
+        margin-top: 40px;
+    }
+
+    nav ul li{
+        padding-top: 15px 0px;
+        width: 100%;
+    }
+
+    .menu li{
+        padding: 5px;
+    }
+
+    nav.show{
+        display: block;
+    }
+
+    /* HEAD GALLERY */
+    .gallery{
+        height: 64vh;
+    }
+
+    .title_gallery{
+        margin-left: 0;
+        margin-top: 10rem;
+        left: 22%;
+    }
+    
+    .title_gallery::after{
+        right: 24rem;
+    }
+    
+    .lead{
+        font-size: 25px;
+    }
+
+    /* PORTRAIT */
+    .title::before{
+        left: 38.5%;
+    }
+    
+    .title::after{
+        left: 44.5%;
+    }
+    
+    .card{
+        display: block;
+        margin-left: 16rem;
+    }
+    
+    .card img{
+        width: 300px; height: 500px;
+        object-fit: cover;;
+    }
+
+    /* LANDSCAPE */
+    .cardland{
+        display: block;
+    }
+
+    .cardland img{
+        width: 700px; height: 450px;
+        margin-left: 3rem;
+    }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTgraphy</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="max-width">
+
+            <div class="toggle-btn" onclick="myFunction();">
+                <span></span><span></span><span></span>
+            </div>
+
+            <div class="logo">
+                <a href="./home.html">
+                    <img src="./Aset/Logo MTgraphy.png" alt="Logo MTgraphy" class="logo_perusahaan">
+                    <span class="nama_perusahaan">MTgraphy</span>
+                    <br>
+                    <span class="slogan_perusahaan">Capturing life. Creating art</span>
+                </a>
+            </div>
+            
+            <nav id="nav">
+                <ul class="menu">
+                    <li><a class="active" href="./home.html">HOME</a></li>
+                    <li><a href="./gallery.html">GALLERY</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a href="./subscribe.html">SUBSCRIBE</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+
+<!-- HOME CONTENT -->
+<section class="home">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text-1">We have partnered with tens of thousands of <br> customers to make what they <br> want with the solutions we provide</div>
+            
+            <a href="./subscribe.html" class="text-2">JOIN NOW</a>
+        </div>
+    </div>
+</section>
+
+    <!-- FEATURED -->
+<section class="featured">
+    <h2 class="title">Latest Photoshoot</h2>
+
+    <div class="body">
+    <!-- image slider start -->
+    <div class="slider">
+        <div class="slides">
+            <!-- radio button start -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!-- radio button end -->
+
+            <div class="slide first">
+                <img src="./Aset/5.jpg" alt="Foto 5">
+            </div>
+            <div class="slide">
+                <img src="./Aset/6.jpg" alt="Foto 6">
+            </div>
+            <div class="slide">
+                <img src="./Aset/7.jpg" alt="Foto 7">
+            </div>
+            <div class="slide">
+                <img src="./Aset/8.jpg" alt="Foto 8">
+            </div>
+            <!-- slide image end -->
+
+            <!-- auto nav start -->
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-- auto nav end -->
+
+        </div>
+        <!-- manual nav start -->
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-- manual nav end -->
+
+    </div>
+    <!-- image slider end -->
+    </div>
+</section>
+
+<!-- POTM -->
+<section class="POTM">
+    <h2 class="title">PHOTOGRAPHER OF THE MONTH</h2>
+    <div class="max-width">
+        <div class="card">
+            <div class="left">
+                <img src="./Aset/POTM.jpg" alt="Foto POTM">
+            </div>
+            <div class="right">
+                <H3>Julia Ashlee</H3><h3>19</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae sint sequi fugiat aliquam dicta nisi dolores commodi hic vero culpa dolorum voluptatum, aliquid optio tenetur! Quo unde esse veniam! Molestias corporis saepe minima eligendi et accusantium doloribus tenetur voluptatem vero quas autem a, perferendis ipsam odit enim, harum ut? Corrupti quas eveniet ea! Doloribus illum odit, error possimus, ad nam sint, corrupti inventore excepturi impedit nisi assumenda accusamus autem eaque!</p>
+                <a href="./gallery.html">GALLERY &#8594;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<section class="footer">
+    <div class="social">
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="./Aset/instagram.png" alt="Logo ig" class="LogoIG"></a>
+
+        <a href="https://web.whatsapp.com/" target="_blank" class="LogoWA">
+            <img src="./Aset/whatsapp.png" alt="Logo wa"></a>
+
+        <a href="https://twitter.com/" target="_blank" class="LogoTWT">
+            <img src="./Aset/twitter.png" alt="Logo twt"></a>
+
+        <a href="https://www.facebook.com/" target="_blank" class="Logo_FB">
+            <img src="./Aset/facebook.png" alt="Logo fb"></a>
+    </div>
+
+    <ul class="list">
+        <li>
+            <a href="./home.html">Home</a>
+        </li>
+        <li>
+            <a href="./gallery.html">Gallery</a>
+        </li>
+        <li>
+            <a href="./contact.html">Contact</a>
+        </li>
+        <li>
+            <a href="#">Terms</a>
+        </li>
+        <li>
+            <a href="#">Privacy Policy</a>
+        </li>
+    </ul>
+    <p class="copyright">
+        @ 2022 MTgraphy. All Rights Reserved.
+    </p>
+</section>
+</body>
+</html>

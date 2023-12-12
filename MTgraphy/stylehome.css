@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: rgb(255, 255, 255, 0.5);
+    font-family: "Raleway";
+    padding: 15px 0;
+    z-index: 999;
+}
+
+.logo_perusahaan{
+    width: 100px;
+    float: left;
+}
+
+.menu li a{
+    font-size: 20px;
+    font-weight: 600px;
+    margin-left: 25px;
+    color:black;
+}
+
+.nama_perusahaan{
+    font-size: 35px;
+    font-weight: 600;
+    color:black;
+}
+
+.slogan_perusahaan{
+    font-size: 15px;
+    color: black;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a:hover, .menu li a.active{
+    font-size: x-large;
+    color:tomato;
+    transition: .5s;
+}
+
+.max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+/* HOME */
+.home{
+    display: flex;
+    background-image: url(./Aset/bghome.jpg);
+    height: 100vh;
+    min-height: 800px;
+    font-family: "Raleway";
+}
+
+.text-1{
+    font-size: 40px;
+    color: white;
+    text-align: start;
+    margin-bottom: 30px;
+    text-shadow: black 3px 3px 3px;
+}
+
+.text-2{
+    font-size: 20px;
+    color: white;
+    background: turquoise;
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.text-2:hover{
+    background: white;
+    color: turquoise;
+    font-size: x-large;
+    transition: .5s;
+}
+
+.space{
+    margin-top: 500px;
+}
+
+.toggle-btn{
+    width: 30px;
+    position: fixed;
+    right: 80px;
+    left: 30px;
+    top: 40px;
+    display: none;
+}
+
+.toggle-btn span{
+    display: block;
+    width: 110%;
+    height: 4px;
+    background-color: black;
+    
+    margin: 8px;
+}
+
+section{
+    padding: 100px 0;
+}
+
+/* LATEST PHOTOSHOOT */
+.title{
+    font-family: "Raleway";
+    text-align: center;
+    font: 40px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background: rgb(173, 17, 17);
+    bottom: 0; left: 42.5%;
+    transform: translateX(-50);
+}
+
+.title::after{
+    content: "featured";
+    position: absolute;
+    bottom: -12px; left: 46.5%;
+    background: rgb(255, 255, 255);
+    color: tomato;
+    padding: 5px;
+    font-size: 20px;
+    transform: translateX(-50);
+}
+
+.body{
+    margin: 0; padding: 0;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    width: 800px; height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%; height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 1s;
+}
+
+.slide img{
+    width: 800px; height: 500px;
+}
+
+/* Manual slide */
+.nav-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid tomato;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: tomato;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* auto slide */
+.nav-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.nav-auto div{
+    border: 2px solid tomato;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.nav-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background: tomato;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background: tomato;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background: tomato;
+}
+
+#radio4:checked ~ .nav-auto .auto-btn4{
+    background: tomato;
+}
+
+/* POTM */
+.POTM .title::before{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 3px;
+    background: rgb(173, 17, 17);
+    bottom: 0; left: 35.5%;
+    transform: translateX(-50);
+}
+
+.POTM .title::after{
+    content: "Our Best Picked Photographer";
+    position: absolute;
+    bottom: -12px; left: 39%;
+    background: rgb(255, 255, 255);
+    color: tomato;
+    padding: 5px;
+    font-size: 20px;
+    transform: translateX(-50);
+}
+
+.POTM .max-width .card{
+    width: 100%; height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.POTM .max-width .card img{
+    width: 350px; height: 400px;
+    object-fit: cover;
+    margin-right: 35px;
+    border-radius: 20px;
+}
+
+.POTM .max-width .card .right{
+    font-family: "Raleway";
+}
+
+.POTM .max-width .card .right h3{
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: violet;
+}
+
+.POTM .max-width .card .right p{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.POTM .max-width .card .right a{
+    font-size: 20px;
+    padding: 15px;
+    background: turquoise;
+    color: white;
+    border-radius: 40px;
+    margin: 20px 0;
+}
+
+.POTM .max-width .card .right a:hover{
+    font-size: x-large;
+    background: rgb(31, 243, 144);
+    color: white;
+    transition: .5s;
+    margin-left: 20px;
+}
+
+/* FOOTER */
+.footer{
+    font-family: "Raleway";
+    font-weight: 400;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.social a{
+    color: inherit;
+    width: 40px; height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.logoWA{
+    margin: 10px 19px;
+}
+
+.social a:hover{
+    opacity: 0.9;
+}
+
+.footer ul{
+    margin-top: 0; padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li a:hover{
+    opacity: 1;
+    margin: 10px;
+    transition: .5s;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* RESPONSIVE MEDIA */
+@media only screen and (max-width: 800px){
+    .toggle-btn{
+        display: block;
+    }
+
+    .max-width{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+    }
+    
+    nav{
+        display: none;
+        width: 100%;
+        border-top: 1px solid black;
+        padding-top: 10px;
+        margin-top: 40px;
+    }
+
+    nav ul li{
+        padding-top: 15px 0px;
+        width: 100%;
+    }
+
+    .menu li{
+        padding: 5px;
+    }
+
+    nav.show{
+        display: block;
+    }
+
+    .text-1{
+        font-size: 40px;
+        color: white;
+        text-align: left;
+        margin-top: 40px;
+        margin-right: 120px;
+        margin-bottom: 30px;
+        text-shadow: black 3px 3px 3px;
+    }
+
+    /* LATEST PHOTOSHOOT */
+    .title{
+        font-family: "Raleway";
+        text-align: center;
+        font: 40px;
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 60px;
+        margin-right: 260px;
+        padding-bottom: 20px;
+    }
+    
+    .title::before{
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 3px;
+        background: rgb(173, 17, 17);
+        bottom: 0; left: 31.5%;
+        transform: translateX(-50);
+    }
+    
+    .title::after{
+        content: "featured";
+        position: absolute;
+        bottom: -12px; left: 41%;
+        background: rgb(255, 255, 255);
+        color: tomato;
+        padding: 5px;
+        font-size: 20px;
+        transform: translateX(-50);
+    }
+
+    .body{
+        margin: 0; padding: 0;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .slider{
+        width: 800px; height: 500px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .slides{
+        width: 500%; height: 500px;
+        display: flex;
+    }
+    
+    .slides input{
+        display: none;
+    }
+    
+    .slide{
+        width: 20%;
+        transition: 1s;
+    }
+    
+    .slide img{
+        width:600px; height: 400px;
+    }
+    
+    /* Manual slide */
+    .nav-manual{
+        position: absolute;
+        width: 550px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .manual-btn{
+        border: 2px solid tomato;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .manual-btn:not(:last-child){
+        margin-right: 40px;
+    }
+    
+    .manual-btn:hover{
+        background: tomato;
+    }
+    
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    
+    #radio2:checked ~ .first{
+        margin-left: -20%;
+    }
+    
+    #radio3:checked ~ .first{
+        margin-left: -40%;
+    }
+    
+    #radio4:checked ~ .first{
+        margin-left: -60%;
+    }
+    
+    /* auto slide */
+    .nav-auto{
+        position: absolute;
+        display: flex;
+        width: 550px;
+        justify-content: center;
+        margin-top: 460px;
+    }
+    
+    .nav-auto div{
+        border: 2px solid tomato;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    
+    .nav-auto div:not(:last-child){
+        margin-right: 40px;
+    }
+    
+    #radio1:checked ~ .nav-auto .auto-btn1{
+        background: tomato;
+    }
+    
+    #radio2:checked ~ .nav-auto .auto-btn2{
+        background: tomato;
+    }
+    
+    #radio3:checked ~ .nav-auto .auto-btn3{
+        background: tomato;
+    }
+    
+    #radio4:checked ~ .nav-auto .auto-btn4{
+        background: tomato;
+    }
+
+/* POTM */
+.POTM .title::before{
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 3px;
+    background: rgb(173, 17, 17);
+    bottom: 0; left: 14.5%;
+    transform: translateX(-50);
+}
+
+.POTM .title::after{
+    content: "Our Best Picked Photographer";
+    position: absolute;
+    bottom: -12px; left: 24%;
+    background: rgb(255, 255, 255);
+    color: tomato;
+    padding: 5px;
+    font-size: 20px;
+    transform: translateX(-50);
+}
+
+.POTM .max-width .card{
+    width: 100%; height: auto;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.POTM .max-width .card img{
+    width: 350px; height: 400px;
+    object-fit: cover;
+    margin-right: 30px;
+    border-radius: 20px;
+}
+
+.POTM .max-width .card .right{
+    font-family: "Raleway";
+}
+
+.POTM .max-width .card .right h3{
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: violet;
+}
+
+.POTM .max-width .card .right p{
+    margin-bottom: 20px;
+    margin-right: 200px;
+    padding-bottom: 10px;
+}
+
+.POTM .max-width .card .right a{
+    font-size: 20px;
+    padding: 15px;
+    background: turquoise;
+    color: white;
+    border-radius: 40px;
+    margin: 20px 0;
+}
+
+.POTM .max-width .card .right a:hover{
+    font-size: x-large;
+    background: rgb(31, 243, 144);
+    color: white;
+    transition: .5s;
+    margin-left: 20px;
+}
+}
